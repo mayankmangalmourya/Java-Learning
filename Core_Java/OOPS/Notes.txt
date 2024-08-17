@@ -1,0 +1,167 @@
+- OOPs ( Object Oriented Programming System)
+- First OOPs Language : "Simula".
+- Truly OOPs Language : Where everything is represented as an object.
+- First Truly OOPs Language : "Smalltalk"
+- OOPs Aim : To Implement the real-world entity.
+- Object :
+    (
+        - Real World Entity. Such as pen, chair, table etc.
+        - Entity has State and behavior.
+        - It can be Physical and logical.
+        - It is defined as a instance of class.
+        - it contain address and take up some memory.
+        - Three Ways to Initialize Object.
+            (
+                - By Reference.
+                - By Method.
+                - By Constructor.
+                    (
+                        - Constructor is a special method of class.
+                        - Two Type of Constructor.
+                            1 : Parametrized Constructor
+                            2 : Non Parametrized Constructor
+                            3 : Default Constructor
+                        - Constructor Overloading : Having more than one constructor with different parameterized list.
+                    )
+            )
+            - See Example : O3_Object_Initialize.java
+        - Different Way To create Object.
+            (
+                - By new Keyword.
+                - By newInstance() method.
+                - By Clone() method.
+                - By Deserialization.
+                - By Factory Method.
+            )
+    )
+- Object-Oriented Programming : Methodology to design a program using classes and objects.
+- Class :
+    (
+        - Collection of objects.
+        - Logical entity.
+        - blueprint from which you can create an individual object.
+        - class doesn't consume any space.
+        - Naming convention : start with upperLetter, it should be noun such as Car, Employee, Button etc.
+    )
+- Inheritance :
+    (
+        - When object acquires all the properties and behavior of a parent object.
+        - Provides Code Reusability.
+        - Used to Achieve Runtime Polymorphism.
+    )
+- Polymorphism :
+    (
+        - One Task is performed in different way.
+        - To Achieve Polymorphism. We Use
+            - Method Overloading
+            - Method Overriding
+    )
+- Abstraction :
+    (
+        - Hiding Internal details and showing functionality.
+        - To Achieve Abstraction. We Use
+            - Abstract Class
+            - Interface
+                (
+                    - Naming Convention : Start with upperLetter, It should be Adjective like Runnable, Remote, ActionListener.
+
+                )
+    )
+- Encapsulation :
+    (
+        - Biding code and data together in a single unit.
+        - Java bean is fully encapsulated class. because all data member are private here.
+    )
+- Access Specifier : It specifies the visibility of the method.
+    (
+        - public : the method is accessible to all classes.
+        - private : the method is accessible only to the class in which it is declared.
+        - protected : the method is accessible to the class in which it is declared and its subclasses.
+        - default : default access specifier. it is visible only from the same package only.
+    )
+- Method
+    (
+        - Static Method : Method that has static keyword. we can call static method without creating class object.
+        - Instance Method : Method that isn't a static method. we can call instance method after creation of class object.
+            (
+                - Accessor :
+                    (
+                        - Getter methods
+                        - it return value of private field.
+                    )
+                - Mutator :
+                    (
+                        - Setter methods
+                        - it set value of private field.
+                    )
+            )
+        - Abstract Method :
+            (
+                - It is a method without body.
+                - It is always declared in abstract class.
+            )
+        - Factory Method : Method that return object of class.
+    )
+- Difference Constructor vs Method
+    (
+        (Used to initialize the state of an object.)(Used to expose the behavior of an object.)
+        (Must not have return type.)(Must have return type.)
+        (Invoked implicitly.)(Invoked Explicitly.)
+        (Constructor name same as class name.)(Method name may or may not be same as class name.)
+    )
+- Java Copy constructor : There is no copy constructor in Java. However, we can copy the values from one object to another.
+- this : this is a reference variable that refers to the current object.
+
+------------------------------------------------------------------------------------------
+            ---------------------- Java Inheritance ---------------------
+
+- One object acquires all the property of parent object.
+- Idea behind inheritance is that you can create new classes that are build upon existing classes.
+  You can reuse the methods and fields of the parent class.
+
+- Inheritance represent's IS-A Relationship.
+- IS-A Represent Parent-Child Relationship.
+
+- Type of Inheritance in java.
+    (
+        - Single : one class inherits another class.
+        - MultiLevel : when there is chain of inheritance.
+        - Hierarchical : when two or more classes inherits single class.
+        - Multiple : when one class inheritance Multiple classes.
+            Multiple inheritance cannot support in java through classes.
+        - Hybrid : single, MultiLevel, Hierarchical, Multiple combinily called Hybrid inheritance.
+    )
+
+- Aggregation
+    (
+        - If a class have an entity reference, it is known as aggregation.
+        - Aggregation represents HAS-A Relationship.
+        - For Example : consider scenerio having class Employee.
+        class Employee{
+            int id;
+            String name;
+            Address address;
+        }
+        class Address{
+            int houseNo;
+            String Street;
+            String District;
+            String State;
+            String Country;
+            String Pincode;
+        }
+        - Here Class employee contains field address. which is reference to another class that contain its
+          Own Information.
+    )
+
+-------------------------- Polymorphism -----------------------------
+- Method Overloading
+    (
+        - Class having multiple method with same name but different in parameter.
+        - Increases readability of a program.
+        - Two ways to overload method in java.
+            (
+                - By changing No of arguments.
+                - By changing the data type of arguments.
+            )
+    )
