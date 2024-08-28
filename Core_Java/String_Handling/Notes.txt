@@ -1,0 +1,13 @@
+- String represent sequence of characters.
+- java.lang.String class implements Serializable, Comparable and CharSequence interfaces.
+- Strings
+    (
+        - Immutable : Cannot be changed. Java String is Immutable
+        - Mutable : Can be changed. StringBuffer, StringBuilder are mutable.
+    )
+
+- String Functions
+    (
+        - equals : check str1.equals(str2); aman == aman (true) else (false).
+        - equalsIgnoreCase : check str1.equalsIgnoreCase(str2); AMAN == aMan (true) else (false).
+    )
