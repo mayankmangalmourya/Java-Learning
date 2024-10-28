@@ -1,0 +1,63 @@
+## Bash Scripting Tutorial....
+- Bash(Bourne Again Shell)
+
+There are different types of shells available in Linux Operating Systems. Some of which are as follows:
+
+- Bourne Shell
+- C shell
+- Korn Shell
+- GNU Bourne Shell
+
+Bash script is a computer program written in the Bash programming language.
+
+- Here, .sh is suffixed as an extension that you have to provide for execution
+Each Bash based Linux script starts by the line-
+
+ ``` #! /bin/bash ```
+
+#! - shebang,  /bin/bash - location of bash.
+
+## echo
+- echo is a built-in command in Bash, which is used to display the standard output by passing the arguments.
+
+There are three type of permission.
+- read (r) 
+- write (w) 
+- execute (x)
+
+There are three type of file ownerness.
+- Owner 
+- group 
+- other user.
+
+Example : -rw-r--r-- (-, rw-, r--, r--) 
+- : represent file name
+rw- : permission assigned for owner.
+r-- : permission assigned for group.
+r-- : permission assigned for third-party.
+
+Changing permission 
+
+- go to file directory.
+- write command ``` ls -l ```
+now you can see the permissions.
+for changing permission write command 
+- ``` chmod [ugoa][+or-][rwx] file_name ```
+ugoa means user, group, other and all class
++ or - means add or remove permission
+rwx : read write execute.
+
+- Run File.
+go to file directory and run command ./fileName.sh
+
+cd : changing the directory
+pwd : print working directory.
+
+Bash Comments
+- Single Line Comment : # Comment Here
+- Multiline Comment : 
+<<<COMMENTS
+.... COMMENT HERE....
+COMMENTS
+
+- Bash Variable are untyped means we don't have to write data type during variable declearation.
